@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ASCII Art Generator</title>
+
+    <style>
+        h1 {
+            color:aqua
+        }
+        .container {
+            background-color:beige;
+            text-align: center;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body style="  align-content: center;">
+ <h1 style="text-align: center;">ASCII Art Generator</h1>
+    <div class="container">
+       
+        <form id="asciiForm" method="POST" action="/ascii-art" >
+            <div>
+                <label for="text">Enter Text:</label>
+                <textarea  maxlength="200" id="text" name="text" required></textarea>
+                
+            </div>
+            <div>
+                <br>
+                <h5>Select Banner Style:</h5>
+                <div class="radio-group"  >
+                    <input type="radio" id="standard" name="font" value="standard" checked>
+                    <label for="standard">Standard</label>
+                    <input type="radio" id="thinkertoy" name="font" value="thinkertoy">
+                    <label for="thinkertoy">Thinkertoy</label>
+                    <input type="radio" id="shadow" name="font" value="shadow">
+                    <label for="shadow">Shadow</label>
+                    <button type="submit">Test</button> 
+                </div><br>
+            </div>
+        </form>
+       
+           
+   
+    </div>
+
+</body>
+</html>
