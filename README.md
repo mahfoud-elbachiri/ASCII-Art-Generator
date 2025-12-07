@@ -40,11 +40,11 @@ http://localhost:8080
 Download .txt file
 ## Preview
 
-
 <p align="center">
-  <img src="https://raw.githubusercontent.com/mahfoud-elbachiri/ASCII-Art-Generator/screenshots/home.png" width="80%" alt="Home Page">
+  <img src="https://raw.githubusercontent.com/mahfoud-elbachiri/ASCII-ART-WEB-EXPORT-FILE/main/screenshots/home.png" width="70%">
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/mahfoud-elbachiri/ASCII-Art-Generator/screenshots/result.png" width="80%" alt="Result Page">
+  <img src="https://raw.githubusercontent.com/mahfoud-elbachiri/ASCII-ART-WEB-EXPORT-FILE/main/screenshots/result.png" width="70%">
 </p>
+
