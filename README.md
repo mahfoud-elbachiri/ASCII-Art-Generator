@@ -40,11 +40,7 @@ http://localhost:8080
 Download .txt file
 ## Preview
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/mahfoud-elbachiri/ASCII-ART-WEB-EXPORT-FILE/main/screenshots/home.png" width="70%">
-</p>
+![Home Page](./screenshots/home.png)
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/mahfoud-elbachiri/ASCII-ART-WEB-EXPORT-FILE/main/screenshots/result.png" width="70%">
-</p>
+![Result Page](./screenshots/result.png)
 
