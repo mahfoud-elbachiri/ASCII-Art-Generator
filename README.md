@@ -38,7 +38,13 @@ http://localhost:8080
 3 - Press Generate
 
 Download .txt file
-## Support
+## Preview
 
-For support, email fake@fake.com or join our Slack channel.
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/mahfoud-elbachiri/ASCII-Art-Generator/main/screenshots/home.png" width="80%" alt="Home Page">
+</p>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/mahfoud-elbachiri/ASCII-Art-Generator/main/screenshots/result.png" width="80%" alt="Result Page">
+</p>
