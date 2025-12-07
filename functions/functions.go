@@ -89,7 +89,8 @@ func Asciiart(w http.ResponseWriter, req *http.Request) {
 
 	// ********* new line *********
 
-	word := strings.Split(input, "\r\n")
+	word := strings.Split(strings.ReplaceAll(input, "\r\n", "\n"), "\n")
+
 
 	for _, b := range word {
 

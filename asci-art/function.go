@@ -31,24 +31,16 @@ func Output(s string, ss http.ResponseWriter) {
 func Art(word string, banner string) string {
 	banner = banner + ".txt"
 	print := ""
-	ln1 := "\n\n"
-	ln2 := "\n"
+ 
 	numb := 1
 
-	if banner == "thinkertoy.txt" {
-		ln1 = "\r\n\r\n"
-		ln2 = "\r\n"
-
-	} else {
-		ln1 = "\n\n"
-		ln2 = "\n"
-	}
+ 
 	file, err := os.ReadFile("banner/" + banner)
 	if err != nil {
 		panic(err)
 	}
-
-	Letters := strings.Split(string(file[numb:]), ln1)
+	data := strings.ReplaceAll(string(file), "\r\n", "\n")
+	Letters := strings.Split(data[numb:], "\n\n")
 
 	var matrix []string
 
@@ -56,8 +48,7 @@ func Art(word string, banner string) string {
 
 		for j := 0; j < len(word); j++ {
 
-			lines := strings.Split(Letters[int(rune(word[j])-32)], ln2)
-
+			lines := strings.Split(Letters[int(rune(word[j])-32)], "\n")
 			matrix = append(matrix, lines[i])
 
 		}

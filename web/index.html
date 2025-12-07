@@ -1,54 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>ASCII Art Generator</title>
+<meta charset="UTF-8">
+<title>ASCII Art Generator</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
-    <style>
-        body{
-            background-color:rgb(243, 250, 242);
-        }
-        h1 {
-            color:rgb(12, 12, 12)
-        }
-        .container {
-            background-color:rgba(175, 185, 230, 0.774);
-            text-align: center;
-            padding: 2%;
-            margin-left: 20%;
-            margin-right: 20%;
-            border-radius: 15px;
-        }
-    </style>
+<style>
+    body {
+        margin: 0;
+        font-family: "Poppins", sans-serif;
+        background: linear-gradient(120deg, #d7f8ff, #c9befa, #a6e6ff);
+        background-size: 300% 300%;
+        animation: gradientMove 10s ease infinite;
+    }
+
+    @keyframes gradientMove {
+        0% { background-position: 0% 40%; }
+        50% { background-position: 100% 60%; }
+        100% { background-position: 0% 40%; }
+    }
+
+    .container {
+        width: 40%;
+        margin: 6% auto;
+        padding: 40px;
+        background: rgba(255, 255, 255, 0.25);
+        backdrop-filter: blur(10px);
+        border-radius: 15px;
+        text-align: center;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    textarea {
+        width: 90%;
+        height: 140px;
+        border-radius: 10px;
+        padding: 10px;
+        border: 2px solid rgb(120, 115, 175);
+        outline: none;
+        font-size: 16px;
+    }
+
+    button {
+        margin-top: 20px;
+        padding: 12px 28px;
+        background: linear-gradient(45deg, #6b5df2, #7dd5ff);
+        color: white;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        font-size: 17px;
+        transition: 0.3s ease;
+    }
+
+    button:hover {
+        opacity: 0.8;
+        transform: scale(1.05);
+    }
+
+    .radio-group {
+        margin-top: 20px;
+        font-size: 16px;
+    }
+
+</style>
 </head>
-<body style="  align-content: center;">
- <h1 style="text-align: center;">ASCII Art Generator</h1>
-    <div class="container">
-       
-        <form id="asciiForm" method="POST" action="/ascii-art" >
-            <div>
-                <label for="text">Enter Text:</label>
-                <textarea  maxlength="200" id="text" name="text" required></textarea>
-                
-            </div>
-            <div>
-                <br>
-                <h5>Select Banner Style:</h5>
-                <div class="radio-group"  >
-                    <input type="radio" id="standard" name="font" value="standard" checked>
-                    <label for="standard">Standard</label>
-                    <input type="radio" id="thinkertoy" name="font" value="thinkertoy">
-                    <label for="thinkertoy">Thinkertoy</label>
-                    <input type="radio" id="shadow" name="font" value="shadow">
-                    <label for="shadow">Shadow</label>
-                    <button type="submit">Test</button> 
-                </div><br>
-            </div>
-        </form>
-       
-           
-   
-    </div>
+<body>
 
+<div class="container">
+    <h1>✨ ASCII Art Generator ✨</h1>
+    <form method="POST" action="/ascii-art">
+        <label>Enter Text:</label>
+        <br>
+        <textarea maxlength="200" name="text" required></textarea>
+
+        <div class="radio-group">
+            <h4>Select Font Style:</h4>
+            <label><input type="radio" value="standard" name="font" checked> Standard</label>
+            <label><input type="radio" value="thinkertoy" name="font"> Thinkertoy</label>
+            <label><input type="radio" value="shadow" name="font"> Shadow</label>
+        </div>
+
+        <button type="submit">Generate</button>
+    </form>
+</div>
 </body>
 </html>
