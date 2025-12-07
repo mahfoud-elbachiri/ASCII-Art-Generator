@@ -42,9 +42,9 @@ Download .txt file
 
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/mahfoud-elbachiri/ASCII-Art-Generator/main/screenshots/home.png" width="80%" alt="Home Page">
+  <img src="https://raw.githubusercontent.com/mahfoud-elbachiri/ASCII-Art-Generator/screenshots/home.png" width="80%" alt="Home Page">
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/mahfoud-elbachiri/ASCII-Art-Generator/main/screenshots/result.png" width="80%" alt="Result Page">
+  <img src="https://raw.githubusercontent.com/mahfoud-elbachiri/ASCII-Art-Generator/screenshots/result.png" width="80%" alt="Result Page">
 </p>
